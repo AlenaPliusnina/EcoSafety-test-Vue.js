@@ -2,5 +2,5 @@ module.exports = {
   transpileDependencies: [
     'vuetify'
   ],
-  publicPath: '/eco-safety/'
+  publicPath: '/EcoSafety-test-Vue.js/'
 }
