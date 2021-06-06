@@ -58,7 +58,7 @@ export default {
     })
     eventBus.$on('logout', data => {
       this.token = data.token;
-      this.pid = date.pid;
+      this.pid = data.pid;
     })
   },
   mounted() {
