@@ -39,7 +39,7 @@ export default new Vuex.Store({
             localStorage.setItem('md5', payload.md5);
             commit('setLocalStorage', data);
           } else {
-            alert('Не верный логин или пароль.')
+            alert('Неверный логин или пароль.')
           }      
         })
         .catch((e) => {
