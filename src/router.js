@@ -12,12 +12,13 @@ const router = new VueRouter({
       {
         path: '/',
         name: 'home-page',
-        component: HomePage
+        component: HomePage,
       },
       {
         path: '/login',
         name: 'login-page',
-        component: LoginPage
+        component: LoginPage,
+        props: (route) => ({data: route.query.data})
       },
     ]
   });

@@ -47,14 +47,18 @@ export default {
   name: 'App',
   data() {
     return {
-      token: localStorage.getItem('token'),
-      pid: localStorage.getItem('pid')
+      token: '',
+      pid: ''
     }
   },
   created() {
     eventBus.$on('login', data => {
       this.token = data.token;
       this.pid = data.pid;
+    })
+    eventBus.$on('logout', data => {
+      this.token = data.token;
+      this.pid = date.pid;
     })
   },
   mounted() {

@@ -26,7 +26,10 @@ export default new Vuex.Store({
       localStorage.removeItem('token');
       localStorage.removeItem('pid');
       localStorage.removeItem('md5');
-      // window.location.reload();
+      eventBus.$emit('logout', {
+        token: '',
+        pid: ''
+      });
       router.push('/login');
     }
   },
