@@ -47,8 +47,8 @@ export default {
   name: 'App',
   data() {
     return {
-      token: '',
-      pid: ''
+      token: localStorage.getItem('token'),
+      pid: localStorage.getItem('pid')
     }
   },
   created() {
